@@ -1,0 +1,84 @@
+[NAME]
+name=gitswitch
+
+[VERSION]
+version=0.1
+
+[RELEASE]
+release=0.mrx9
+
+[GROUP]
+group=Applications/Internet
+
+[DESCRIPTION]
+0=A tool that will help you copy repositories from GitHub into GitFlic
+1=---
+2=More information: /usr/share/doc/package_name/repack.txt
+
+[MAINTAINER]
+maintainer=Alex Kotov
+
+[VENDOR]
+vendor=GitFlic
+
+[SUMMARY]
+summary=A tool that will help you copy repositories from GitHub into GitFlic
+
+[URLCOPY]
+urlcopy=https://gitflic.ru/project/dbi471/git-switch
+
+[LICENSE]
+license=MIT
+
+[DEPS]
+deps=python3-gitflic python3-pygithub python3-click python3-requests python3-gitpython
+
+[META]
+meta=0
+
+[NOARCH]
+noarch=1
+
+[SIGN]
+sign=0
+
+[DEB]
+deb=0
+
+[FILES]
+0=/usr/bin/gitswitch
+1=/usr/share/doc/gitswitch/
+
+[URL32]
+url32=https://gitflic.ru/project/dbi471/git-switch
+
+[URL64]
+url64=
+
+[PROGRAMNAME]
+programname=GitSwitch
+
+[DEVTOOL]
+devtool=Python
+
+[TOOLVERSION]
+toolversion=3.7
+
+[INFO]
+0=gitswitch --help
+1=
+2=Options:
+3=--gf_token TEXT        Your GitFlic token.  [required]
+4=--gh_token TEXT        Your GitHub token.  [required]
+5=--clone_folder PATH    Directory where to download repositories.
+6=--apply_private        Need to copy private repositories?
+7=--apply_organisations  Need to copy organisations repositories?
+8=--use_ssh              Use SSH mode to upload repositories.
+9=--help                 Show this message and exit.
+10=
+11=Get GitHub token from: https://github.com/settings/tokens
+12=Get GitFlic token from: https://gitflic.ru/settings/oauth/token
+13=
+14=If you are using 2AF into GitFlic select ssh connection using the key: --use_ssh.
+15=
+16=The script will copy all the necessary repositories to ./cloned-repos/<login>/<repo_name>, then push it to GitFlic
